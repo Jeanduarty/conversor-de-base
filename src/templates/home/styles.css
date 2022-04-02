@@ -1,0 +1,7 @@
+.container {
+  min-width: 700px;
+  min-height: 100vh;
+  background-color: #22272E;
+  margin: 0 auto;
+  margin-top: 0;
+}

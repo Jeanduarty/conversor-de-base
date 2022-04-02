@@ -1,0 +1,27 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #2D333B;
+    width: 100%;
+}
+
+.container-social{
+    background-color: white;
+    max-width: 200px;
+}
+
+.imageInstagram{
+    padding: 10px;
+    cursor: pointer;
+    background-color: white ;
+}
+
+.imageGithub{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.imageEmail{
+    padding: 10px;
+    cursor: pointer;
+}
