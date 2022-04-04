@@ -3,25 +3,26 @@
     bottom: 0;
     background-color: #2D333B;
     width: 100%;
+    height: 55px;
 }
 
-.container-social{
-    background-color: white;
-    max-width: 200px;
-}
-
-.imageInstagram{
-    padding: 10px;
+.imageInstagram{    
+    width: 40px;
     cursor: pointer;
-    background-color: white ;
+    padding-top: 5px;
+    padding-right: 5px;
+    
 }
 
 .imageGithub{
-    padding: 10px;
     cursor: pointer;
+    padding-top: 5px;
+    padding-right: 5px;
+    width: 40px;
 }
 
 .imageEmail{
-    padding: 10px;
+    padding-top: 5px;
     cursor: pointer;
+    width: 40px;
 }
