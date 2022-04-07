@@ -17,6 +17,7 @@ export const ConveterDecimalForBinary = ({ decimal }) => {
     }
 
     const binary = division.slice(0).reverse();
-    
+    console.log("Invertendo a divisão fica = ", binary)
+
     return binary
 }
