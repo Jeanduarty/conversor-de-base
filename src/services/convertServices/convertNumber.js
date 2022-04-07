@@ -11,10 +11,8 @@ export const ConveterDecimalForBinary = ({ decimal }) => {
         console.log("resto = ", resto)
         quociente = Math.floor(quociente / 2)
     }
-    if (quociente == 1 || quociente == 0){
-        division.push(quociente)
-        console.log("ultimo quociente = ", quociente)
-    }
+    division.push(quociente)
+    console.log("ultimo quociente = ", quociente)
 
     const binary = division.slice(0).reverse();
     console.log("Invertendo a divisão fica = ", binary)
