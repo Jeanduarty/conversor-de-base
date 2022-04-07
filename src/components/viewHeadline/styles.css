@@ -1,6 +1,14 @@
-.viewHeadline{
-    margin-top: 6px;
-    margin-left: 65px;
+.popoverButton{
     position: absolute;
-    cursor: pointer;
+    display: inline-block;
+    transition: transform 150ms;
+}
+
+.popoverButton:hover {
+    transform: scale(1.09);
+}
+
+.viewHeadLineimg{
+    width: 40px;
+    border-radius: 35px;
 }

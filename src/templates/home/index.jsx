@@ -1,50 +1,34 @@
-import './styles.css';
+import './styles.css'
 
-import { Component } from 'react'
+import { useState } from 'react'
 
-import { InputNumber } from '../../components/inputNumber';
-import { ConversionResult } from '../../components/conversionResult';
-import { Converter } from '../../components/buttonConverter';
-import { TopHomeBar } from '../../components/topHomeBar';
-import { FooterHome } from '../../components/footer';
+import { InputNumber } from '../../components/inputNumber'
+import { ConversionResult } from '../../components/conversionResult'
+import { Converter } from '../../components/buttonConverter'
+import { TopHomeBar } from '../../components/topHomeBar'
+import { FooterHome } from '../../components/footer'
+import { ConveterDecimalForBinary } from '../../services/convertServices/convertNumber'
 
-export class Home extends Component {
-  state = {
-    notWasConvert: 0,
-    wasConvert: 2,
-    result: 0
-  }
+export const Home = () => {
+  const [decimal, setDecimal] = useState(0)
+  const [result, setResult] = useState(0)
 
-  handleChangeNumber1 = (e) => {
+  const handleChangeNumber1 = (e) => {
     const { value } = e.target
-    const valueInt = parseInt(value)
-    this.setState({ notWasConvert: valueInt })
+    setDecimal(parseInt(value))
   }
 
-  // handleChangeNumber2 = (e) => {
-  //   const { value } = e.target
-  //   this.setState({ wasConvert: parseInt(value) })
-  // }
-
-  handleConvert = () => {
-    const { notWasConvert, wasConvert } = this.state
-
-    const validationNotWasConvert = isNaN(notWasConvert) ? 0 : notWasConvert
-    
-    this.setState({ result: (validationNotWasConvert * wasConvert) })
+  const handleConvert = () => {
+    setResult(<ConveterDecimalForBinary decimal={decimal} />)
   }
 
-  render() {
-    const { result } = this.state
-
-    return (
-      <div className='container'>
-        <TopHomeBar />
-        <InputNumber onChange={this.handleChangeNumber1} />
-        <Converter onClick={this.handleConvert} />
-        <ConversionResult result={result} />
-        <FooterHome />
-      </div>
-    );
-  }
+  return (
+    <div className='container'>
+      <TopHomeBar />
+      <InputNumber onChange={handleChangeNumber1} />
+      <Converter onClick={handleConvert} />
+      <ConversionResult result={result} />
+      <FooterHome />
+    </div>
+  )
 }
