@@ -45,7 +45,9 @@ export function PopoverButttonView() {
         }}
       >
         <Typography fontFamily={'Nunito'} fontSize={18} sx={{ p: 2 }}>
-          Brincando de React XD
+          <div className='textView'>
+            Digite um número decimal inteiro para converter em número binário
+          </div>
         </Typography>
       </Popover>
     </div>

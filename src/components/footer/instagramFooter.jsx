@@ -48,7 +48,7 @@ export function InstagramFooter() {
                     horizontal: 'left',
                 }}
             >
-                <Typography sx={{ p: 1 }}>
+                <Typography sx={{ p: 0 }}>
                     <a href="https://instagram.com/jean_vduarte" target='_blank'>
                         <img src={instagramPopover} className='instagramPopover' />
                     </a>

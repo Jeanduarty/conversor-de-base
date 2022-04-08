@@ -13,21 +13,21 @@ export const Home = () => {
   const [decimal, setDecimal] = useState(0)
   const [result, setResult] = useState(0)
 
-  const handleChangeNumber1 = (e) => {
-    const { value } = e.target
-    setDecimal(parseInt(value))
-  }
+  const size = decimal > 9999999 ? 15 : 25
 
-  const handleConvert = () => {
-    setResult(<ConveterDecimalForBinary decimal={decimal} />)
+  const handleChangeNumber = (e) => {
+    const { value } = e.target
+    const decimalValue = value
+    setDecimal(parseInt(decimalValue))
+    setResult(<ConveterDecimalForBinary decimal={decimalValue} />)
   }
 
   return (
     <div className='container'>
       <TopHomeBar />
-      <InputNumber onChange={handleChangeNumber1} />
-      <Converter onClick={handleConvert} />
-      <ConversionResult result={result} />
+      <InputNumber onChange={handleChangeNumber} size={size} />
+      <Converter />
+      <ConversionResult result={result} decimal={decimal} size={size} />
       <FooterHome />
     </div>
   )

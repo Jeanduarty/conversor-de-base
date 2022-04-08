@@ -1,7 +1,9 @@
 import './styles.css'
 
-export const ConversionResult = ({ result }) => (
-    <div className='result'>
-        {result}
-    </div>
+export const ConversionResult = ({ result, size }) => (
+    <div className='inputBorder'>
+        <div className='result' style={{ fontSize: size }}>
+            {result}
+        </div>
+    </div >
 )

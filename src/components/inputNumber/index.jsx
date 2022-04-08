@@ -1,8 +1,14 @@
 import './styles.css'
 
-export const InputNumber = ({ onChange }) => (
-    <input autoFocus className='inputNumber1'
-    onChange={onChange} 
-    placeholder="Digite um número decimal">
-    </input>
+export const InputNumber = ({ onChange, size }) => (
+    <div className='inputBorder'>
+        <div className='inputDivNumber'>
+            <input type='search'
+                autoFocus className='inputNumber1'
+                onChange={onChange}
+                placeholder="Digite um número decimal"
+                style={{ fontSize: size }}>
+            </input>
+        </div>
+    </div>
 )

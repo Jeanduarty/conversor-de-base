@@ -3,6 +3,7 @@
     bottom: 0;
     background-color: #2D333B;
     width: 100vw;
+    height: 39px;
 }
 
 .sub-footer {
@@ -17,8 +18,8 @@
     padding-bottom: 3px;
 }
 
-.imageInstagram:hover {
-    transform: scale(1.016);
+.instagramPopover:hover {
+    transform: scale(1.04);
 }
 
 .imageGitHub {
@@ -29,8 +30,8 @@
     padding-bottom: 3px;
 }
 
-.imageGitHub:hover {
-    transform: scale(1.016);
+.githubPopover:hover{
+    transform: scale(1.04);
 }
 
 .imageEmail {
