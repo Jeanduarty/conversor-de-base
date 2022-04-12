@@ -1,11 +1,29 @@
 .container {
   height: 100vh;
-  background-color: #22272e;
-  margin: 0 auto;
-  margin-top: 0;
+  background: -o-linear-gradient(
+      right,
+      rgba(34, 39, 46, 0.95),
+      rgba(34, 39, 46, 0.95)
+    ),
+    url(levi.gif);
+  background: -moz-linear-gradient(
+      right,
+      rgba(34, 39, 46, 0.95),
+      rgba(34, 39, 46, 0.95)
+    ),
+    url(levi.gif);
+  background: linear-gradient(
+      to right,
+      rgba(34, 39, 46, 0.95),
+      rgba(34, 39, 46, 0.95)
+    ),
+    url(levi.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-.container::before {
+/* 
+.container::bef {
   content: " ";
   background-image: url(levi.gif);
   background-position: center;
@@ -17,7 +35,7 @@
 }
 
 .sub-container-home::after {
-}
+} */
 
 h1 {
   color: white;
