@@ -4,7 +4,7 @@ import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import view from "./images/viewHeadLine.png";
+import view from "./images/viewHeadline.png";
 
 import "./styles.css";
 
