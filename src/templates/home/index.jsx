@@ -11,6 +11,7 @@ import { ConveterDecimalForBinary } from "../../services/convertServices/convert
 export const Home = () => {
   const [decimal, setDecimal] = useState(0);
   const [result, setResult] = useState(0);
+  const [flag, setFlag] = useState(false);
 
   const size = decimal > 9999999 ? 15 : 25;
   const minHeight = isNaN(decimal) ? 34 : 20.667;
@@ -20,10 +21,19 @@ export const Home = () => {
     const decimalValue = parseInt(value);
     setDecimal(decimalValue);
     handleConvert(decimalValue);
+    handleEffet();
   };
 
   const handleConvert = (decimalValue) => {
     setResult(<ConveterDecimalForBinary decimal={decimalValue} />);
+  };
+
+  const handleEffet = () => {
+    setFlag(true);
+
+    setTimeout(() => {
+      setFlag(false);
+    }, 50);
   };
 
   return (
@@ -40,6 +50,7 @@ export const Home = () => {
           decimal={decimal}
           size={size}
           minHeight={minHeight}
+          flag={flag}
         />
         <FooterHome />
       </div>
