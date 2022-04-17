@@ -11,7 +11,7 @@ function checkChar(e) {
 }
 
 export const InputNumber = ({ onChange, size, minHeight }) => (
-  <div className="inputBorder">
+  <div className="inputBorderNumber">
     <div className="inputDivNumber">
       <input
         type="search"
