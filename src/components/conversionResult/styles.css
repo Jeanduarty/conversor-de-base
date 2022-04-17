@@ -1,7 +1,7 @@
 .result {
   display: block;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 12.5px;
   border-radius: 9px;
   padding: 15px;
   max-width: 450px;
@@ -11,4 +11,13 @@
   cursor: not-allowed;
   text-align: center;
   min-height: 34px;
+}
+
+.animation {
+  width: 400px;
+  height: 4px;
+  background-color: rgba(163, 23, 23, 0.866);
+  margin: 0 auto;
+  margin-top: 12.5px;
+  visibility: hidden;
 }
