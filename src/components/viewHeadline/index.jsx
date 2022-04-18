@@ -51,6 +51,7 @@ export function PopoverButttonView() {
         <Typography fontFamily={"Nunito"} fontSize={18} sx={{ p: 2 }}>
           <div className="textView">
             Digite um número decimal inteiro para converter em número binário
+            (Button temporário até eu desenvolver as outras conversões)
           </div>
         </Typography>
       </Popover>
